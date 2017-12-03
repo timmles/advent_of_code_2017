@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
 
-internal class SecondTest {
+internal class D2Part1Test {
     @Test
     fun GIVEN_sample_WHEN_checksum_THEN_18() {
         val strings = arrayOf(
@@ -13,13 +13,11 @@ internal class SecondTest {
                 "7 5 3",
                 "2 4 6 8");
 
-
-
         Assertions.assertEquals(18, Second().execute(strings));
     }
 
     @Test
-    fun GIVEN_actual_WHEN_checksum_THEN_unkown() {
+    fun GIVEN_actual_WHEN_checksum_THEN_32020() {
         val strings = arrayOf(
                 "116 1470 2610 179 2161 2690 831 1824 2361 1050 2201 118 145 2275 2625 2333",
                 "976 220 1129 553 422 950 332 204 1247 1092 1091 159 174 182 984 713",

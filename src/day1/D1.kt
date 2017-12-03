@@ -1,6 +1,6 @@
 package day1
 
-class First {
+class D1Part1 {
 
     fun execute(input: String): Int {
         var sum: Int = 0;
@@ -22,7 +22,7 @@ class First {
     }
 }
 
-class Second {
+class D1Part2 {
 
     fun execute(input: String): Int {
         var sum: Int = 0;
