@@ -3,14 +3,13 @@ package day2
 class Second {
 
     fun execute(input: Array<String>): Int {
-        val output: List<Int> = input.map { string -> transform(string) }
+        val output: List<Int> = input.map { string -> checksum(string) }
 
         return output.sum()
     }
 
-    private fun transform(string: String): Int {
-        val split: List<String> = string.split(' ')
-        val map: List<Int> = split.map { input -> input.toInt() }
+    private fun checksum(string: String): Int {
+        val map: List<Int> = transform(string)
 
         val min = map.min()
         val max = map.max()
@@ -22,4 +21,9 @@ class Second {
         return 0
     }
 
+    private fun transform(string: String): List<Int> {
+        val split: List<String> = string.split(' ')
+        val map: List<Int> = split.map { input -> input.toInt() }
+        return map
+    }
 }
