@@ -3,21 +3,19 @@ package day2
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
-import org.junit.jupiter.api.Assertions.*
-
-internal class D2Part1Test {
+internal class D2Part2Test {
     @Test
-    fun GIVEN_sample_WHEN_checksum_THEN_18() {
+    fun GIVEN_sample_WHEN_divisible_THEN_9() {
         val strings = arrayOf(
-                "5 1 9 5",
-                "7 5 3",
-                "2 4 6 8");
+                "5 9 2 8",
+                "9 4 7 3",
+                "3 8 6 5");
 
-        Assertions.assertEquals(18, Second().execute(strings));
+        Assertions.assertEquals(9, D2Part2().execute(strings));
     }
 
     @Test
-    fun GIVEN_actual_WHEN_checksum_THEN_32020() {
+    fun GIVEN_actual_WHEN_checksum_THEN_236() {
         val strings = arrayOf(
                 "116 1470 2610 179 2161 2690 831 1824 2361 1050 2201 118 145 2275 2625 2333",
                 "976 220 1129 553 422 950 332 204 1247 1092 1091 159 174 182 984 713",
@@ -39,6 +37,7 @@ internal class D2Part1Test {
 
         Second().execute(strings)
 
-        Assertions.assertEquals(32020, Second().execute(strings));
+        Assertions.assertEquals(236, D2Part2().execute(strings));
     }
+
 }

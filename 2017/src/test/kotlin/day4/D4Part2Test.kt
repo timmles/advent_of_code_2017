@@ -24,9 +24,9 @@ internal class D4Part2Test {
 
     @Test
     fun GIVEN_actual_WHEN_validated_THEN_correct() {
-//        val url: String = ClassLoader.getSystemClassLoader().getResource("puzzle_data.txt").file
+        val url: String = ClassLoader.getSystemClassLoader().getResource("D4.txt").file
 
-        val input = File("/home/timmles/projects/advent_of_code_2017/src/day4/puzzle_data.txt").readLines()
+        val input = File(url).readLines()
         var count = 0;
 
         for (line in input) {
