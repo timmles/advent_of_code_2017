@@ -7,9 +7,9 @@ import java.io.File
 internal class D5Part1Test {
     @Test
     fun GIVEN_0_3_0_1_neg3_WHEN_calculate_THEN_5() {
-        val ints = arrayOf(0, 3, 0, 1, -3)
+        val numbers = arrayOf(0, 3, 0, 1, -3)
 
-        Assertions.assertEquals(5, D5Part1().execute(ints))
+        Assertions.assertEquals(5, D5Part1().execute(numbers))
     }
 
     @Test

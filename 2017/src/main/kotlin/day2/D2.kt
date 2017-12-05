@@ -23,8 +23,7 @@ class Second {
 
     private fun transform(string: String): List<Int> {
         val split: List<String> = string.split(' ')
-        val map: List<Int> = split.map { input -> input.toInt() }
-        return map
+        return split.map { input -> input.toInt() }
     }
 }
 
@@ -39,8 +38,8 @@ class D2Part2 {
     private fun divisible(string: String): Int {
         val map: List<Int> = transform(string)
 
-        var a: Int = 0
-        var b: Int = 0
+        var a = 0
+        var b = 0
 
         loop@ for (num in map) {
             for (divisible in map.minusElement(num)) {
@@ -65,7 +64,6 @@ class D2Part2 {
 
     private fun transform(string: String): List<Int> {
         val split: List<String> = string.split(' ')
-        val map: List<Int> = split.map { input -> input.toInt() }
-        return map
+        return split.map { input -> input.toInt() }
     }
 }

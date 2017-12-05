@@ -2,49 +2,41 @@ package day5
 
 class D5Part1 {
 
-    fun execute(ints: Array<Int>): Int {
-        var count = 0;
-        var pointer = 0;
+    fun execute(values: Array<Int>): Int {
+        var count = 0
+        var pointer = 0
 
-        while (pointer < ints.size) {
-//            println(ints.joinToString(","))
-//            println(pointer)
-//            println(ints[pointer])
+        while (pointer < values.size) {
+            val instruction = values[pointer]
+            values[pointer]++
 
-            val instruction = ints[pointer]
-            ints[pointer]++
-
-            pointer = instruction + pointer;
-            count++;
+            pointer += instruction
+            count++
         }
 
-        return count;
+        return count
     }
 }
 
 class D5Part2 {
 
-    fun execute(ints: Array<Int>): Int {
-        var count = 0;
-        var pointer = 0;
+    fun execute(values: Array<Int>): Int {
+        var count = 0
+        var pointer = 0
 
-        while (pointer < ints.size) {
-//            println(ints.joinToString(","))
-//            println(pointer)
-//            println(ints[pointer])
-
-            val instruction = ints[pointer]
+        while (pointer < values.size) {
+            val instruction = values[pointer]
 
             if (instruction >= 3) {
-                ints[pointer]--
+                values[pointer]--
             } else {
-                ints[pointer]++
+                values[pointer]++
             }
 
-            pointer = instruction + pointer;
-            count++;
+            pointer += instruction
+            count++
         }
 
-        return count;
+        return count
     }
 }

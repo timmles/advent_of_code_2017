@@ -9,16 +9,16 @@ class D3Part1 {
 
         val find = grid.cellSet().find { cell -> cell.value == limit }
 
-        return Math.abs(find?.rowKey!!) + Math.abs(find?.columnKey!!)
+        return Math.abs(find?.rowKey!!) + Math.abs(find.columnKey!!)
     }
 
     private fun buildGrid(limit: Int): Table<Int, Int, Int> {
         val table = HashBasedTable.create<Int, Int, Int>()
 
-        var count = 1;
+        var count = 1
 
-        var x = 0;
-        var y = 0;
+        var x = 0
+        var y = 0
 
         var direction = DIRECTION.EAST
 
@@ -31,7 +31,7 @@ class D3Part1 {
 
             // TEST
             val left = direction.left()
-            var leftCell = table[x + left.x, y + left.y]
+            val leftCell = table[x + left.x, y + left.y]
 
 //            println(leftCell)
 
@@ -57,10 +57,10 @@ class D3Part2 {
     private fun buildGrid(limit: Int): Table<Int, Int, Int> {
         val table = HashBasedTable.create<Int, Int, Int>()
 
-        var count = 1;
+        var count = 1
 
-        var x = 0;
-        var y = 0;
+        var x = 0
+        var y = 0
 
         var direction = DIRECTION.EAST
 
@@ -74,7 +74,7 @@ class D3Part2 {
 
             // TEST
             val left = direction.left()
-            var leftCell = table[x + left.x, y + left.y]
+            val leftCell = table[x + left.x, y + left.y]
 
 //            println(leftCell)
 
