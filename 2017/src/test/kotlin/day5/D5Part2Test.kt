@@ -18,7 +18,7 @@ internal class D5Part2Test {
 
         val ints = File(url).readLines().map { input -> input.toInt() }
 
-        Assertions.assertEquals(318883, D5Part2().execute(ints.toTypedArray()))
+        Assertions.assertEquals(23948711, D5Part2().execute(ints.toTypedArray()))
     }
 
 }
